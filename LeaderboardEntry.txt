@@ -1,0 +1,150 @@
+ "name": "LeaderboardEntry",
+  "type": "object",
+  "properties": {
+    "player_name": {
+      "type": "string",
+      "title": "Spielername"
+    },
+    "has_youtube": {
+      "type": "boolean",
+      "title": "Hat YouTube",
+      "default": false
+    },
+    "tier_type": {
+      "type": "string",
+      "title": "Tier Typ",
+      "enum": [
+        "none",
+        "low",
+        "mid",
+        "high"
+      ],
+      "default": "none"
+    },
+    "tier_number": {
+      "type": "number",
+      "title": "Tier Nummer (1-10)",
+      "minimum": 1,
+      "maximum": 10
+    },
+    "is_ranked": {
+      "type": "boolean",
+      "title": "Ranked",
+      "default": false
+    },
+    "general_rank": {
+      "type": "string",
+      "title": "Allgemeiner Rang"
+    },
+    "general_stats": {
+      "type": "string",
+      "title": "Allgemeine Stats / Wins"
+    },
+    "general_placement": {
+      "type": "number",
+      "title": "Platzierung (Reihenfolge)"
+    },
+    "selected_items": {
+      "type": "array",
+      "title": "Item Badges (max 3)",
+      "items": {
+        "type": "string"
+      }
+    },
+    "inventory_image_url": {
+      "type": "string",
+      "title": "Inventar Bild URL"
+    },
+    "sword_rank": {
+      "type": "string",
+      "title": "Sword PvP Rang"
+    },
+    "sword_stats": {
+      "type": "string",
+      "title": "Sword PvP Stats"
+    },
+    "axe_rank": {
+      "type": "string",
+      "title": "Axe PvP Rang"
+    },
+    "axe_stats": {
+      "type": "string",
+      "title": "Axe PvP Stats"
+    },
+    "mace_rank": {
+      "type": "string",
+      "title": "Mace PvP Rang"
+    },
+    "mace_stats": {
+      "type": "string",
+      "title": "Mace PvP Stats"
+    },
+    "crystal_rank": {
+      "type": "string",
+      "title": "Crystal PvP Rang"
+    },
+    "crystal_stats": {
+      "type": "string",
+      "title": "Crystal PvP Stats"
+    },
+    "nethpot_rank": {
+      "type": "string",
+      "title": "Neth Pot Rang"
+    },
+    "nethpot_stats": {
+      "type": "string",
+      "title": "Neth Pot Stats"
+    },
+    "smpkit_rank": {
+      "type": "string",
+      "title": "SMP Kit Rang"
+    },
+    "smpkit_stats": {
+      "type": "string",
+      "title": "SMP Kit Stats"
+    },
+    "customkit_rank": {
+      "type": "string",
+      "title": "Custom Kit Rang"
+    },
+    "customkit_stats": {
+      "type": "string",
+      "title": "Custom Kit Stats"
+    },
+    "tntminecart_rank": {
+      "type": "string",
+      "title": "TNT Minecart Rang"
+    },
+    "tntminecart_stats": {
+      "type": "string",
+      "title": "TNT Minecart Stats"
+    },
+    "bow_rank": {
+      "type": "string",
+      "title": "Bow Rang"
+    },
+    "bow_stats": {
+      "type": "string",
+      "title": "Bow Stats"
+    },
+    "spear_rank": {
+      "type": "string",
+      "title": "Spear Rang"
+    },
+    "spear_stats": {
+      "type": "string",
+      "title": "Spear Stats"
+    },
+    "skin_url": {
+      "type": "string",
+      "title": "Skin URL"
+    },
+    "notes": {
+      "type": "string",
+      "title": "Notizen"
+    }
+  },
+  "required": [
+    "player_name"
+  ]
+}
